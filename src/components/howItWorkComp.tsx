@@ -3,9 +3,7 @@ import React from 'react'
 import { HowItWork } from "../data/data"
 
 const HowItWorkComp = () => {
-
-    const flag = true;
-
+    
     return (
         <Box sx={{
             padding: {

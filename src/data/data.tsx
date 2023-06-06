@@ -94,8 +94,6 @@ export const FooterIcons = [
     }
 ]
 
-
-
 export const HowItWork = [
     {
         title : "Lorem ipsum dolor",
@@ -108,5 +106,41 @@ export const HowItWork = [
     {
         title : "Lorem ipsum dolor",
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+]
+
+export const PricingContent = [
+    {
+        type : 'Free',
+        color: '#F1F1F1',
+        features : [
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame'
+        ],
+        price : '$19'
+    },
+    {
+        type : 'Starter',
+        color: '#5DB1FF4F',
+        features : [
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame'
+        ],
+        price : '$19'
+    },
+    {
+        type : 'Pro',
+        color: '#88F8FF73',
+        features : [
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame',
+            'Lorem ipsum dolor sit ame'
+        ],
+        price : '$19'
     }
 ]

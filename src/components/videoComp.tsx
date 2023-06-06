@@ -47,7 +47,8 @@ const VideoComp = () => {
                 <Card sx={{
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
                     borderRadius: "14px",
-                    marginBottom: "24px"
+                    marginBottom: "24px",
+                    padding : '16px 16px 24px 16px'
                 }}>
                     <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
                         <ImageListItem sx={{ marginRight: "20px" }}>
@@ -77,7 +78,8 @@ const VideoComp = () => {
                 <Card sx={{
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
                     borderRadius: "14px",
-                    marginBottom: "24px"
+                    marginBottom: "24px",
+                    padding : '16px 16px 24px 16px'
                 }}>
                     <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
                         <ImageListItem sx={{ marginRight: "20px" }}>
@@ -105,7 +107,8 @@ const VideoComp = () => {
 
                 <Card sx={{
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
-                    borderRadius: "14px"
+                    borderRadius: "14px",
+                    padding : '16px 16px 24px 16px'
                 }}>
                     <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
                         <ImageListItem sx={{ marginRight: "20px" }}>

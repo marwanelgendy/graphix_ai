@@ -9,6 +9,10 @@
   background-position-y: -100px;
 }
 
+.MuiCardContent-root{
+  padding: 0 !important;
+}
+
 .MuiDrawer-paper {
   width: 100%;
 }

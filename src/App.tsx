@@ -8,6 +8,7 @@ import LanguagesComp from './components/languagesComp'
 import FeaturesComp from "./components/featuersComp"
 import HowItWorkComp from './components/howItWorkComp';
 import Footer from './components/footer';
+import Pricing from './components/pricing';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <FeaturesComp/>
       <LanguagesComp/>
       <HowItWorkComp />
+      <Pricing />
       <Footer/>
     </div>
   );
