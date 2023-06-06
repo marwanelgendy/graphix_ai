@@ -10,6 +10,10 @@ import Ai from "../imgs/AI_chat_to_video.svg"
 import videoTranslation from "../imgs/Video_translation.svg"
 import lipSyncing from "../imgs/Lip_Syncing.svg"
 import voiceCloning from "../imgs/Voice_Cloning.svg"
+import instagram from "../imgs/instagram.svg"
+import twitter from "../imgs/twitter.svg"
+import tiktok from "../imgs/tiktok.svg"
+import discord from "../imgs/discord.svg"
 
 export const Languages = [
     {
@@ -68,3 +72,25 @@ export const Features = [
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
     },
 ]
+
+export const Footer = {
+    product: ["How GraphixAi Works" , "Use Cases" , "Pricing" , "Help Center" , "We Are Hiring!"],
+    company: ["About Us" , "Terms Of Use" , "Privacy" , "Give Feedback"],
+    conatct: ["Join Our Community" , "Email Us"]
+} 
+
+export const FooterIcons = [
+    {
+        path: instagram
+    },
+    {
+        path: twitter
+    },
+    {
+        path: tiktok
+    },
+    {
+        path: discord
+    }
+]
+
