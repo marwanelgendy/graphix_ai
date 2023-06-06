@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/navBar';
 import Landing from './components/landing';
 import VideoComp from './components/videoComp';
+import LanguagesComp from './components/languagesComp'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Landing />
       <VideoComp />
+      <LanguagesComp/>
     </div>
   );
 }
