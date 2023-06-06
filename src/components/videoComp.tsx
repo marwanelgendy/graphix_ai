@@ -27,7 +27,6 @@ const VideoComp = () => {
             <Box sx={{
                 display:"flex",
                 flexBasis:{
-                    
                     sm: '50%'
                 },
                 height:{

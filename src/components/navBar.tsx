@@ -12,10 +12,9 @@ import {
 import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import { red } from "@mui/material/colors";
 import DrawerComp from "./drawerComp";
-// import DrawerComp from "./Drawer";
 const NavBar = () => {
 
-    const theme = useTheme();
+    const theme = useTheme();   
     console.log(theme);
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
     console.log(isMatch);

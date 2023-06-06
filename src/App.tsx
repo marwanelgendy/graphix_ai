@@ -6,6 +6,7 @@ import Landing from './components/landing';
 import VideoComp from './components/videoComp';
 import LanguagesComp from './components/languagesComp'
 import FeaturesComp from "./components/featuersComp"
+import HowItWorkComp from './components/howItWorkComp';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <VideoComp />
       <FeaturesComp/>
       <LanguagesComp/>
+      <HowItWorkComp />
     </div>
   );
 }
