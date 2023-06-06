@@ -73,7 +73,7 @@ export const Features = [
     },
 ]
 
-export const Footer = {
+export const FooterContent = {
     product: ["How GraphixAi Works" , "Use Cases" , "Pricing" , "Help Center" , "We Are Hiring!"],
     company: ["About Us" , "Terms Of Use" , "Privacy" , "Give Feedback"],
     conatct: ["Join Our Community" , "Email Us"]

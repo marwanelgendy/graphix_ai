@@ -1,13 +1,11 @@
 import { Box, Divider, ImageListItem, Link, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
 import React from 'react'
-import {Footer , FooterIcons } from "../data/data"
+import {FooterContent , FooterIcons } from "../data/data"
 
-
-const footer = () => {
-
+const Footer = () => {
     const theme = useTheme();
     console.log(theme);
-    const isMatch = useMediaQuery(theme.breakpoints.down("xs"));
+    const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
     console.log(isMatch);
 
     return (
@@ -73,7 +71,7 @@ const footer = () => {
                     }}>
                     <Typography sx={{fontWeight: 600, marginBottom: "18px"}}>Product</Typography>
                     <Stack spacing={2}>
-                        {Footer.product.map((link) => {
+                        {FooterContent.product.map((link) => {
                             return(
                                 <Link sx={{
                                     textDecoration: "none",
@@ -95,7 +93,7 @@ const footer = () => {
                     }}>
                     <Typography sx={{fontWeight: 600, marginBottom: "18px"}}>Company</Typography>
                     <Stack spacing={2}>
-                        {Footer.company.map((link) => {
+                        {FooterContent.company.map((link) => {
                             return(
                                 <Link sx={{
                                     textDecoration: "none",
@@ -125,7 +123,7 @@ const footer = () => {
                         }}>
                         <Typography sx={{fontWeight: 600, marginBottom: "18px"}}>Contact Us</Typography>
                         <Stack spacing={2}>
-                            {Footer.conatct.map((link) => {
+                            {FooterContent.conatct.map((link) => {
                                 return(
                                     <Link sx={{
                                         textDecoration: "none",
@@ -142,6 +140,6 @@ const footer = () => {
             </Stack>
         </Box>
     );
-};
+}
 
-export default footer;
+export default Footer
