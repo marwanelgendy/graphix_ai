@@ -6,6 +6,7 @@ import Landing from './components/landing';
 import VideoComp from './components/videoComp';
 import LanguagesComp from './components/languagesComp'
 import FeaturesComp from "./components/featuersComp"
+import Footer from "./components/footer"
 import HowItWorkComp from './components/howItWorkComp';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <FeaturesComp/>
       <LanguagesComp/>
       <HowItWorkComp />
+      <Footer/>
     </div>
   );
 }
