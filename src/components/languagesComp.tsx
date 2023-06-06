@@ -21,7 +21,7 @@ const languagesComp = () => {
                 fontWeight: 600,
                 fontSize:{
                     xs: "25px",
-                    md: "35px",
+                    sm: "35px",
                     lg: "45px"
                 },
                 marginBottom:{

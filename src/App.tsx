@@ -5,6 +5,7 @@ import NavBar from './components/navBar';
 import Landing from './components/landing';
 import VideoComp from './components/videoComp';
 import LanguagesComp from './components/languagesComp'
+import FeaturesComp from "./components/featuersComp"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Landing />
       <VideoComp />
+      <FeaturesComp/>
       <LanguagesComp/>
     </div>
   );
