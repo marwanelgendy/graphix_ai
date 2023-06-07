@@ -1,5 +1,5 @@
-import { Box, Typography, Button, Stack, ImageListItem, Card, CardContent,IconButton } from "@mui/material";
-import React from "react";
+import { Box, Typography, Button, Stack, ImageListItem, Card, CardContent, IconButton } from "@mui/material";
+import React, { useState } from "react";
 import english from '../imgs/english.svg'
 import spanish from '../imgs/spanish.svg'
 import mandarin from '../imgs/mandarin.svg'
@@ -7,6 +7,13 @@ import playBtn from '../imgs/playBtn.svg'
 
 
 const VideoComp = () => {
+
+    const [language, setLanguage] = useState("English")
+
+    const onSelectLanguage = (language: string) => {
+        setLanguage(language)
+    }
+
     return (
         <Stack sx={{
             padding: {
@@ -14,42 +21,53 @@ const VideoComp = () => {
                 sm: '0px 24px',
                 lg: '0px 100px'
             },
-            paddingBottom : '50px !important'
-        }} 
-        spacing={2}
-        direction={{
-            xs: 'column',
-            sm: 'row'
-        }} 
-        
-        alignItems={'stretch'}
+            paddingBottom: '50px !important'
+        }}
+            spacing={2}
+            direction={{
+                xs: 'column',
+                sm: 'row'
+            }}
+
+            alignItems={'stretch'}
         >
             <Box sx={{
-                display:"flex",
-                flexBasis:{
+                display: "flex",
+                flexBasis: {
                     sm: '50%'
                 },
-                height:{
+                height: {
                     xs: "224px",
                     sm: 'auto'
                 },
-                backgroundColor:'#D9D9D9',
+                backgroundColor: '#D9D9D9',
                 borderRadius: '14px'
             }}
-            justifyContent={'center'}
-            alignItems={'center'}
+                justifyContent={'center'}
+                alignItems={'center'}
             >
-                <ImageListItem sx={{width : '80px' , height:'80px'}}>
-                    <img src={playBtn} alt="" />
-                </ImageListItem>
+                {language == "English" && <ImageListItem sx={{ width: '80px', height: '80px' }}>
+                                                <img src={playBtn} alt="" />
+                                            </ImageListItem>}
+                
+                {language == "Spanish" && <ImageListItem sx={{ width: '80px', height: '80px' }}>
+                                                <img src={playBtn} alt="" />
+                                            </ImageListItem>}
+
+                {language == "Mandarin" && <ImageListItem sx={{ width: '80px', height: '80px' }}>
+                                                <img src={playBtn} alt="" />
+                                            </ImageListItem>}
             </Box>
             <Box>
                 <Card sx={{
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
                     borderRadius: "14px",
                     marginBottom: "24px",
-                    padding : '16px 16px 24px 16px'
-                }}>
+                    padding: '16px 16px 24px 16px',
+                    cursor : 'pointer'
+                }}
+                onClick={() => onSelectLanguage('English')}
+                >
                     <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
                         <ImageListItem sx={{ marginRight: "20px" }}>
                             <img src={english} alt="english" />
@@ -62,7 +80,10 @@ const VideoComp = () => {
                                     xs: "17px",
                                     md: "20px"
                                 }
-                            }}>English</Typography>
+                            }}>
+                                English
+                            </Typography>
+
                             <Typography sx={{
                                 color: "#737373",
                                 fontSize: {
@@ -79,8 +100,11 @@ const VideoComp = () => {
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
                     borderRadius: "14px",
                     marginBottom: "24px",
-                    padding : '16px 16px 24px 16px'
-                }}>
+                    padding: '16px 16px 24px 16px',
+                    cursor : 'pointer'
+                }}
+                onClick={() => onSelectLanguage('Spanish')}
+                >
                     <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
                         <ImageListItem sx={{ marginRight: "20px" }}>
                             <img src={spanish} alt="spanish" />
@@ -93,7 +117,9 @@ const VideoComp = () => {
                                     xs: "17px",
                                     md: "20px"
                                 }
-                            }}>Spanish</Typography>
+                            }}>
+                                Spanish
+                            </Typography>
                             <Typography sx={{
                                 color: "#737373",
                                 fontSize: {
@@ -108,8 +134,11 @@ const VideoComp = () => {
                 <Card sx={{
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
                     borderRadius: "14px",
-                    padding : '16px 16px 24px 16px'
-                }}>
+                    padding: '16px 16px 24px 16px',
+                    cursor : 'pointer'
+                }}
+                onClick={() => onSelectLanguage('Mandarin')}
+                >
                     <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
                         <ImageListItem sx={{ marginRight: "20px" }}>
                             <img src={mandarin} alt="mandarin" />
@@ -122,7 +151,9 @@ const VideoComp = () => {
                                     xs: "17px",
                                     md: "20px"
                                 }
-                            }}>Mandarin</Typography>
+                            }}>
+                                Mandarin
+                            </Typography>
                             <Typography sx={{
                                 color: "#737373",
                                 fontSize: {

@@ -7,8 +7,8 @@ const Landing = () => {
         <Box sx={{
             textAlign: 'center',
             margin: {
-                xs: "235px 0px",
-                md: "180px 0px"
+                xs: "50px 0px",
+                md: "100px 0px"
             }
         }}>
             <Typography sx={{
