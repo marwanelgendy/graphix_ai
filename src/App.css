@@ -17,6 +17,18 @@
   width: 100%;
 }
 
+.faq .css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(135deg) !important;
+}
+.cases .css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(90deg) !important;
+}
+.cases .MuiAccordion-root:before,
+.faq .MuiAccordion-root:before{
+  height: 0px;
+}
+
+
 @media (min-width : 600px) {
   .MuiDrawer-paper {
     width: 350px;

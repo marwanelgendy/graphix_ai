@@ -9,6 +9,8 @@ import FeaturesComp from "./components/featuersComp"
 import HowItWorkComp from './components/howItWorkComp';
 import Footer from './components/footer';
 import Pricing from './components/pricing';
+import Faqs from './components/faqsComp';
+import UseCases from './components/useCases';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
       <FeaturesComp/>
       <LanguagesComp/>
       <HowItWorkComp />
+      <UseCases/>
       <Pricing />
+      <Faqs/>
       <Footer/>
     </div>
   );
