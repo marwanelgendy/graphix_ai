@@ -9,6 +9,10 @@
   background-position-y: -100px;
 }
 
+.scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
 .MuiCardContent-root{
   padding: 0 !important;
 }

@@ -14,6 +14,12 @@ import instagram from "../imgs/instagram.svg"
 import twitter from "../imgs/twitter.svg"
 import tiktok from "../imgs/tiktok.svg"
 import discord from "../imgs/discord.svg"
+import avatar1 from "../imgs/avatar1.svg"
+import avatar2 from "../imgs/avatar2.svg"
+import avatar3 from "../imgs/avatar3.svg"
+import avatar4 from "../imgs/avatar4.svg"
+import avatar5 from "../imgs/avatar5.svg"
+import avatar6 from "../imgs/avatar6.svg"
 
 export const Languages = [
     {
@@ -142,5 +148,68 @@ export const PricingContent = [
             'Lorem ipsum dolor sit ame'
         ],
         price : '$19'
+    }
+]
+
+export const Reviews = [
+    {
+        avatar: avatar1,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar2,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar3,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar4,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar5,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar6,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar2,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar3,    
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar4,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        avatar: avatar5,
+        name: "Lorem ipsum",
+        position: "Lorem ipsum",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
 ]
