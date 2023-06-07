@@ -4,10 +4,8 @@ import {FooterContent , FooterIcons } from "../data/data"
 
 const Footer = () => {
     const theme = useTheme();
-    console.log(theme);
     const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-    console.log(isMatch);
-
+    
     return (
         <Box sx={{
             background: "#5727E7",

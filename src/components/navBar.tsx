@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import {
     AppBar,
+    Stack,
     Button,
-    Tab,
-    Tabs,
     Toolbar,
     Typography,
     useMediaQuery,
     useTheme,
+    ImageListItem
 } from "@mui/material";
-import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
-import { red } from "@mui/material/colors";
+import logo from '../imgs/logo.png'
 import DrawerComp from "./drawerComp";
 const NavBar = () => {
 
     const theme = useTheme();   
-    console.log(theme);
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-    console.log(isMatch);
 
     return (
         <React.Fragment>
@@ -26,7 +23,14 @@ const NavBar = () => {
                     xs : "0px 20px",
                     md: "0px 50px"
                 }}}>
-                    <Typography sx={{ fontSize: "25px", color: "#5727E7", fontWeight: 600 }}>GraphixAi</Typography>
+                    <Stack direction={'row'} alignItems={'center'}>
+                        <ImageListItem sx={{
+                            width : "72px"
+                        }} >
+                            <img style={{width : "100%"}} src={logo} alt="logo" />
+                        </ImageListItem>
+                        <Typography sx={{ fontSize: "25px", color: "#5727E7", fontWeight: 600 }}>GraphixAi</Typography>
+                    </Stack>
                     {isMatch ? (
                         <>
                             <DrawerComp />
