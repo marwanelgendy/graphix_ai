@@ -58,7 +58,9 @@ const VideoComp = () => {
                                                 <img src={playBtn} alt="" />
                                             </ImageListItem>}
             </Box>
-            <Box>
+            <Box sx={{
+                flexBasis : "55%",
+            }}>
                 <Card sx={{
                     boxShadow: "0px 0px 7px rgba(0, 0, 0, 0.2)",
                     borderRadius: "14px",
