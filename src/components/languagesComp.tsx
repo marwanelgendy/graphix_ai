@@ -32,9 +32,11 @@ const languagesComp = () => {
                 Languages We Translate
             </Typography>
             <Stack direction={"row"} justifyContent={"center"} flexWrap={"wrap"}>
-                {Languages.map((language) => {
+                {Languages.map((language , index) => {
                     return(
-                        <Card sx={{
+                        <Card
+                        key={index}
+                        sx={{
                             boxShadow: "0px 0px 6px 0px #00000026",
                             borderRadius: "7px",
                             padding:{

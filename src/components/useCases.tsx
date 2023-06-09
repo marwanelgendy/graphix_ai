@@ -40,9 +40,11 @@ const UseCases = () => {
             </Typography>
 
             {
-                isMob && Cases.map((ele) => {
+                isMob && Cases.map((ele , index) => {
                     return (
-                        <Accordion sx={{
+                        <Accordion
+                        key={index}
+                        sx={{
                             boxShadow: "none",
                             marginBottom: "5px"
                         }}>
@@ -107,7 +109,7 @@ const UseCases = () => {
                             {
                                 Cases.map((ele, index) => {
                                     return (
-                                        <Link to={`/case${index + 1}`} style={{ "textDecoration": "none" }}>
+                                        <Link key={index} to={`/case${index + 1}`} style={{ "textDecoration": "none" }}>
                                             <Stack
                                                 direction={"row"}
                                                 alignItems={"center"}
@@ -142,6 +144,7 @@ const UseCases = () => {
                                 Cases.map((ele, index) => {
                                     return (
                                         <Route
+                                            key={index}
                                             path={`/case${index + 1}`}
                                             element={
                                                 <Stack

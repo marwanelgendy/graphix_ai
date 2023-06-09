@@ -40,7 +40,7 @@ const Pricing = () => {
                 justifyContent={'space-between'}
             >
                 {
-                    PricingContent.map(item => (
+                    PricingContent.map((item,index) => (
                         <Card sx={{
                             flexBasis : "32%",
                             boxShadow : "0px 0px 7px rgba(0, 0, 0, 0.24)",
@@ -50,7 +50,9 @@ const Pricing = () => {
                                 xs: "20px",
                                 md : "0px"
                             }
-                        }}>
+                        }}
+                        key={index}
+                        >
                             <CardContent>
                                 <Typography sx={{
                                     color: "#2B2B2B",
@@ -78,8 +80,8 @@ const Pricing = () => {
 
                                 <List sx={{ padding: '0px' }}>
                                     {
-                                        item.features.map(feature => (
-                                            <ListItem sx={{ marginBottom: "12px", padding: "0px" }}>
+                                        item.features.map((feature , index) => (
+                                            <ListItem key={index} sx={{ marginBottom: "12px", padding: "0px" }}>
                                                 <ListItemIcon sx={{ minWidth: 'fit-content', marginRight: "10px" }}>
                                                     <DoneIcon sx={{ color: "#5727E7" }} />
                                                 </ListItemIcon>

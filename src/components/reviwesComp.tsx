@@ -55,11 +55,11 @@ const ReviewsComp = () => {
                     {
                         ReviewPart1.map((item, index) => {
                             return (
-                                <>
+                                <Box key={index}>
                                     {
                                         index == 0 ?
 
-                                            (<Box sx={{
+                                            (<Box  sx={{
                                                 width:{
                                                     xs : "370px",
                                                     sm:"473px"
@@ -99,7 +99,7 @@ const ReviewsComp = () => {
 
                                             :
 
-                                            (<Box sx={{
+                                            (<Box  sx={{
                                                 width:{
                                                     xs : "370px",
                                                     sm:"473px"
@@ -139,7 +139,7 @@ const ReviewsComp = () => {
                                                 </Typography>
                                             </Box>)
                                     }
-                                </>
+                                </Box>
                             )
                         })
                     }
@@ -157,7 +157,7 @@ const ReviewsComp = () => {
                     {
                         ReviewPart2.map((item, index) => {
                             return (
-                                <>
+                                <Box key={index}>
                                     {
                                         index == 0 ?
 
@@ -241,7 +241,7 @@ const ReviewsComp = () => {
                                                 </Typography>
                                             </Box>)
                                     }
-                                </>
+                                </Box>
                             )
                         })
                     }

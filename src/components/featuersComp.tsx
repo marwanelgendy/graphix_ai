@@ -33,7 +33,7 @@ const featuersComp = () => {
                 Features
             </Typography>
             <Stack direction={"row"} justifyContent={"space-between"} flexWrap={"wrap"}>
-                {Features.map((feature) =>{
+                {Features.map((feature , index) =>{
                     return(
                         <Card sx={{
                             boxShadow: "0px 0px 7px 0px #0000003D",
@@ -53,7 +53,9 @@ const featuersComp = () => {
                                 sm: "48%",
                                 lg: "23%"
                             }
-                        }}>
+                        }}
+                        key={index}
+                        >
                             <CardContent>
                                 <ImageListItem sx={{width:"52px" , height: "52px"}}>
                                     <img src={feature.path} alt="ai" />

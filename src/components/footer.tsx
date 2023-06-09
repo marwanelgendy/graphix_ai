@@ -33,7 +33,7 @@ const Footer = () => {
                     GraphixAi
                 </Typography>
                 <Stack direction={"row"} spacing={2} alignItems={"center"}>
-                    {FooterIcons.map((icon) =>{
+                    {FooterIcons.map((icon , index) =>{
                         return(
                             <ImageListItem sx={{
                                 width:{
@@ -44,7 +44,9 @@ const Footer = () => {
                                     xs: "24px",
                                     lg: "27px"
                                 }
-                            }}>
+                            }}
+                            key={index}
+                            >
                                 <img src={icon.path} alt={icon.path} />
                             </ImageListItem>
                         )
@@ -69,13 +71,15 @@ const Footer = () => {
                     }}>
                     <Typography sx={{fontWeight: 600, marginBottom: "18px"}}>Product</Typography>
                     <Stack spacing={2}>
-                        {FooterContent.product.map((link) => {
+                        {FooterContent.product.map((link , index) => {
                             return(
                                 <Link sx={{
                                     textDecoration: "none",
                                     cursor: "pointer",
                                     color:  "white"
-                                }}>
+                                }}
+                                key={index}
+                                >
                                     {link}
                                 </Link>
                             )
@@ -91,13 +95,16 @@ const Footer = () => {
                     }}>
                     <Typography sx={{fontWeight: 600, marginBottom: "18px"}}>Company</Typography>
                     <Stack spacing={2}>
-                        {FooterContent.company.map((link) => {
+                        {FooterContent.company.map((link , index) => {
                             return(
-                                <Link sx={{
-                                    textDecoration: "none",
-                                    cursor: "pointer",
-                                    color:  "white"
-                                }}>
+                                <Link 
+                                    key={index}
+                                    sx={{
+                                        textDecoration: "none",
+                                        cursor: "pointer",
+                                        color:  "white"
+                                    }}                          
+                                >
                                     {link}
                                 </Link>
                             )
@@ -121,9 +128,11 @@ const Footer = () => {
                         }}>
                         <Typography sx={{fontWeight: 600, marginBottom: "18px"}}>Contact Us</Typography>
                         <Stack spacing={2}>
-                            {FooterContent.conatct.map((link) => {
+                            {FooterContent.conatct.map((link , index) => {
                                 return(
-                                    <Link sx={{
+                                    <Link
+                                    key={index}
+                                    sx={{
                                         textDecoration: "none",
                                         cursor: "pointer",
                                         color:  "white"

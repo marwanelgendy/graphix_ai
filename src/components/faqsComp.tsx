@@ -34,12 +34,14 @@ const Faqs = () => {
                 FAQ’s
             </Typography>
             {
-                FaqsData.map((faq) => {
+                FaqsData.map((faq , index) => {
                     return(
                         <Accordion sx={{
                             boxShadow: "none",
                             marginBottom: "0px"
-                        }}>
+                        }}
+                            key={index}
+                        >
                             <AccordionSummary
                             expandIcon={<img src={PlusIcon} alt="" />}
                             aria-controls="panel1a-content"

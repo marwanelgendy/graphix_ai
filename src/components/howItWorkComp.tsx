@@ -37,7 +37,7 @@ const HowItWorkComp = () => {
             {
                 HowItWork.map((item, index) => {
                     return (
-                        <>
+                        <Box key={index}>
                             {
                                 index % 2 == 0 ?
                                     (<Stack
@@ -53,7 +53,8 @@ const HowItWorkComp = () => {
                                             md: 'row'
                                         }}
                                         justifyContent={'space-between'}
-                                        alignItems={'stretch'}>
+                                        alignItems={'stretch'}
+                                        >
 
                                         <Box sx={{
                                             backgroundColor: "#D9D9D9",
@@ -166,7 +167,7 @@ const HowItWorkComp = () => {
                                         </Box>
                                     </Stack>)
                             }
-                        </>
+                        </Box>
 
                     )
                 })
