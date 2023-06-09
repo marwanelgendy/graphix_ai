@@ -32,10 +32,35 @@
   height: 0px;
 }
 
+.slider-animation{
+  animation-name: slide;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+@keyframes slide {
+  0%   {left: 0;}
+  15%  {left: -370px;}
+  30%  {left : -740px;}
+  45%  {left : -1110px;}
+  60%  {left : -1480px;}
+  75% {left : 0px}
+  100% {left: 0px;}
+}
 
 @media (min-width : 600px) {
   .MuiDrawer-paper {
     width: 350px;
+  }
+
+  @keyframes slide {
+    0%   {left: 0;}
+    15%  {left: -473px;}
+    30%  {left : -946px;}
+    45%  {left : -1419px;}
+    60%  {left : -1892px;}
+    75% {left : 0px}
+    100% {left: 0px;}
   }
 }
 

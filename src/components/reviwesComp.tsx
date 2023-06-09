@@ -47,10 +47,12 @@ const ReviewsComp = () => {
                 width: "100%",
                 overflowX: "scroll"
             }}>
-                <Box sx={{
+                <Box className="slider-animation" sx={{
                     paddingY: "30px",
                     borderTop: "1px solid #00000040",
                     display: 'inline-flex',
+                    position : 'relative',
+                    transition : '.3s',
                 }}>
                     {
                         ReviewPart1.map((item, index) => {
@@ -145,7 +147,7 @@ const ReviewsComp = () => {
                     }
                 </Box>
 
-                <Box sx={{
+                <Box className="slider-animation" sx={{
                     paddingY: "30px",
                     paddingLeft: {
                         xs : "0px",
@@ -153,6 +155,9 @@ const ReviewsComp = () => {
                     },
                     borderTop: "1px solid #00000040",
                     display: 'inline-flex',
+                    position : 'relative',
+                    transition : '.3s',
+                    left : '0',
                 }}>
                     {
                         ReviewPart2.map((item, index) => {
