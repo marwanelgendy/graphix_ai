@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, ImageListItem, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { HowItWork } from "../data/data"
-
+import howItWork from '../imgs/howItWork.jpg'
 const HowItWorkComp = () => {
     
     return (
@@ -56,7 +56,7 @@ const HowItWorkComp = () => {
                                         alignItems={'stretch'}
                                         >
 
-                                        <Box sx={{
+                                        <ImageListItem sx={{
                                             backgroundColor: "#D9D9D9",
                                             flexBasis: {
                                                 md: "45%"
@@ -65,7 +65,9 @@ const HowItWorkComp = () => {
                                                 xs: "224px",
                                                 md: "auto"
                                             }
-                                        }}></Box>
+                                        }}>
+                                            <img src={howItWork} alt="" />
+                                        </ImageListItem>
 
                                         <Box sx={{
                                             padding: {
@@ -119,7 +121,7 @@ const HowItWorkComp = () => {
                                         justifyContent={'space-between'}
                                         alignItems={'stretch'}>
 
-                                        <Box sx={{
+                                        <ImageListItem sx={{
                                             backgroundColor: "#D9D9D9",
                                             flexBasis: {
                                                 md: "45%"
@@ -128,7 +130,9 @@ const HowItWorkComp = () => {
                                                 xs: "224px",
                                                 md: "auto"
                                             }
-                                        }}></Box>
+                                        }}>
+                                            <img src={howItWork} alt="" />
+                                        </ImageListItem>
 
                                         <Box sx={{
                                             padding: {

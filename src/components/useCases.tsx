@@ -43,6 +43,7 @@ const UseCases = () => {
                 isMob && Cases.map((ele , index) => {
                     return (
                         <Accordion
+                        defaultExpanded = {ele.expanded}
                         key={index}
                         sx={{
                             boxShadow: "none",
@@ -72,7 +73,7 @@ const UseCases = () => {
                                 position: "relative"
                             }}>
                                 <ImageListItem>
-                                    <img src={ele.path} alt="" />
+                                    <img src={ele.image} alt="" />
                                 </ImageListItem>
                                 <Box sx={{
                                     padding: "0 12px",
@@ -109,7 +110,7 @@ const UseCases = () => {
                             {
                                 Cases.map((ele, index) => {
                                     return (
-                                        <Link key={index} to={`/case${index + 1}`} style={{ "textDecoration": "none" }}>
+                                        <Link key={index} to={ele.path} style={{ "textDecoration": "none" }}>
                                             <Stack
                                                 direction={"row"}
                                                 alignItems={"center"}
@@ -145,7 +146,7 @@ const UseCases = () => {
                                     return (
                                         <Route
                                             key={index}
-                                            path={`/case${index + 1}`}
+                                            path={ele.path}
                                             element={
                                                 <Stack
                                                     direction={"row"}
@@ -157,7 +158,7 @@ const UseCases = () => {
                                                         position : 'relative'
                                                     }}
                                                 >
-                                                    <ImageListItem><img src={ele.path} alt="" style={{ "width": "auto" }} /></ImageListItem>
+                                                    <ImageListItem><img src={ele.image} alt="" style={{ "width": "auto" }} /></ImageListItem>
                                                     <Box sx={{
                                                         position:'absolute',
                                                         left : '30%',
