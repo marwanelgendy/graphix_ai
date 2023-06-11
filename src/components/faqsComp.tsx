@@ -38,7 +38,8 @@ const Faqs = () => {
                     return(
                         <Accordion sx={{
                             boxShadow: "none",
-                            marginBottom: "0px"
+                            marginBottom: "0px",
+                            backgroundColor : "#F5F5F5"
                         }}
                             key={index}
                         >

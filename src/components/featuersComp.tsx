@@ -48,10 +48,13 @@ const featuersComp = () => {
                                 sm: "18px",
                                 lg: "0"
                             },
-                            flexBasis:{
-                                xs: "100%",
-                                sm: "48%",
-                                lg: "23%"
+                            flex:{
+                                xs: "0 0 100%",
+                                sm: "0 0 48%",
+                                lg: "1 1 "
+                            },
+                            marginLeft :{
+                                lg: "10px"
                             }
                         }}
                         key={index}

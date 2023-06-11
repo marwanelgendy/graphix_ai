@@ -1,9 +1,11 @@
-import { Box, Typography, Button, Stack, ImageListItem, Card, CardContent, IconButton } from "@mui/material";
+import { Box, Typography, Stack, ImageListItem, Card, CardContent, CardMedia  } from "@mui/material";
 import React, { useState } from "react";
 import english from '../imgs/english.svg'
 import spanish from '../imgs/spanish.svg'
 import mandarin from '../imgs/mandarin.svg'
 import playBtn from '../imgs/playBtn.svg'
+import video from '../imgs/example.mp4'
+import ReactPlayer from 'react-player'
 
 
 const VideoComp = () => {
@@ -46,17 +48,13 @@ const VideoComp = () => {
                 justifyContent={'center'}
                 alignItems={'center'}
             >
-                {language == "English" && <ImageListItem sx={{ width: '80px', height: '80px' }}>
-                                                <img src={playBtn} alt="" />
-                                            </ImageListItem>}
+                {language == "English" && 
+                    <ReactPlayer url={video} controls={true} class="react-player"  />
+                }
                 
-                {language == "Spanish" && <ImageListItem sx={{ width: '80px', height: '80px' }}>
-                                                <img src={playBtn} alt="" />
-                                            </ImageListItem>}
+                {language == "Spanish" && <ReactPlayer url={video} controls={true} class="react-player"  />}
 
-                {language == "Mandarin" && <ImageListItem sx={{ width: '80px', height: '80px' }}>
-                                                <img src={playBtn} alt="" />
-                                            </ImageListItem>}
+                {language == "Mandarin" && <ReactPlayer url={video} controls={true} class="react-player"  />}
             </Box>
             <Box sx={{
                 flexBasis : "55%",

@@ -7,10 +7,17 @@
   background-size: initial;
   background-position-x: -75px;
   background-position-y: -100px;
+
+  background-color: #F5F5F5;
 }
 
 .scroll-bar::-webkit-scrollbar {
   display: none;
+}
+
+.react-player{
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .MuiCardContent-root{
@@ -51,6 +58,10 @@
 @media (min-width : 600px) {
   .MuiDrawer-paper {
     width: 350px;
+  }
+
+  .react-player{
+    height: auto !important;
   }
 
   @keyframes slide {
