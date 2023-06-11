@@ -42,7 +42,6 @@ const VideoComp = () => {
                     xs: "224px",
                     sm: 'auto'
                 },
-                backgroundColor: '#D9D9D9',
                 borderRadius: '14px'
             }}
                 justifyContent={'center'}
