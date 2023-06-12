@@ -12,6 +12,7 @@ import Pricing from './components/pricing';
 import Faqs from './components/faqsComp';
 import UseCases from './components/useCases';
 import ReviewsComp from './components/reviwesComp';
+import ReviewSection from './components/reviewSection';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <LanguagesComp/>
       <HowItWorkComp />
       <UseCases/>
-      <ReviewsComp />
+      <ReviewSection />
       <Pricing />
       <Faqs/>
       <Footer/>
