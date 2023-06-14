@@ -73,9 +73,13 @@ const ReviewSection = () => {
                     <Carousel
                         responsive={responsive}
                         autoPlay={true}
+                        infinite={true}
+                        customTransition={'transform 5000ms ease-in-out'}
+                        transitionDuration={5000}
                         removeArrowOnDeviceType={["mobile", "superLargeDesktop", "tablet", "desktop"]}
                         itemClass='carousel-item'
                     >
+                     
                         {
                             ReviewPart1.map((item, index) => {
                                 return (
@@ -161,6 +165,9 @@ const ReviewSection = () => {
                     <Carousel 
                         responsive={responsive}
                         autoPlay={true}
+                        infinite={true}
+                        customTransition={'transform 5000ms ease-in-out'}
+                        transitionDuration={5000}
                         removeArrowOnDeviceType={["mobile", "superLargeDesktop", "tablet", "desktop"]}
                         itemClass='carousel-item'
                     >
