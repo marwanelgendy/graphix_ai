@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, ImageListItem, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { HowItWork } from "../data/data"
-import howItWork from '../imgs/howItWork.jpg'
+
 const HowItWorkComp = () => {
     
     return (
@@ -66,7 +66,7 @@ const HowItWorkComp = () => {
                                                 md: "auto"
                                             }
                                         }}>
-                                            <img src={howItWork} alt="" />
+                                            <img src={item.image} alt="" />
                                         </ImageListItem>
 
                                         <Box sx={{
@@ -131,7 +131,7 @@ const HowItWorkComp = () => {
                                                 md: "auto"
                                             }
                                         }}>
-                                            <img src={howItWork} alt="" />
+                                            <img src={item.image} alt="" />
                                         </ImageListItem>
 
                                         <Box sx={{

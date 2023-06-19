@@ -31,7 +31,7 @@ const VideoComp = () => {
                 sm: 'row'
             }}
 
-            alignItems={'stretch'}
+            alignItems={'center'}
         >
             <Box sx={{
                 display: "flex",
