@@ -48,12 +48,12 @@ const VideoComp = () => {
                 alignItems={'center'}
             >
                 {language == "English" && 
-                    <ReactPlayer url={video} controls={true} class="react-player"  />
+                    <ReactPlayer url={video} controls={true} className="react-player"  />
                 }
                 
-                {language == "Spanish" && <ReactPlayer url={video} controls={true} class="react-player"  />}
+                {language == "Spanish" && <ReactPlayer url={video} controls={true} className="react-player"  />}
 
-                {language == "Mandarin" && <ReactPlayer url={video} controls={true} class="react-player"  />}
+                {language == "Mandarin" && <ReactPlayer url={video} controls={true} className="react-player"  />}
             </Box>
             <Box sx={{
                 flexBasis : "55%",

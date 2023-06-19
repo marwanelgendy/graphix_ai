@@ -1,5 +1,5 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, ImageListItem, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Cases } from "../data/data"
 import Arrow from "../imgs/arrow.svg"
 import { Link, Route, Routes } from "react-router-dom"
@@ -8,6 +8,14 @@ const UseCases = () => {
 
     const theme = useTheme();
     const isMob = useMediaQuery(theme.breakpoints.down("sm"));
+
+    const [caseItem, setCsaeItem] = useState("case1")
+
+
+    const onSelectCase = (value: string) => {
+        setCsaeItem(value)
+    }
+
 
     return (
         <Box className="cases" sx={{
@@ -40,15 +48,15 @@ const UseCases = () => {
             </Typography>
 
             {
-                isMob && Cases.map((ele , index) => {
+                isMob && Cases.map((ele, index) => {
                     return (
                         <Accordion
-                        defaultExpanded = {ele.expanded}
-                        key={index}
-                        sx={{
-                            boxShadow: "none",
-                            marginBottom: "5px"
-                        }}>
+                            defaultExpanded={ele.expanded}
+                            key={index}
+                            sx={{
+                                boxShadow: "none",
+                                marginBottom: "5px"
+                            }}>
                             <AccordionSummary
                                 expandIcon={<img src={Arrow} alt="" />}
                                 aria-controls="panel1a-content"
@@ -110,86 +118,91 @@ const UseCases = () => {
                             {
                                 Cases.map((ele, index) => {
                                     return (
-                                        <Link key={index} to={ele.path} style={{ "textDecoration": "none" }}>
-                                            <Stack
-                                                direction={"row"}
-                                                alignItems={"center"}
-                                                justifyContent={"space-between"}
-                                                sx={{
-                                                    marginBottom: "8px",
-                                                    padding: "23px 13px",
-                                                    background: "#F6F6FF",
-                                                    borderRadius: "7px"
-                                                }}>
-                                                <Typography sx={{
-                                                    fontSize: {
-                                                        sm: "18p",
-                                                        md: "20px",
-                                                        lg: "22px"
-                                                    },
-                                                    fontWeight: 600,
-                                                    textDecoration: "none !important",
-                                                    color: "black"
-                                                }}>
-                                                    {ele.title}
-                                                </Typography>
-                                                <ImageListItem><img src={Arrow} alt="" /></ImageListItem>
-                                            </Stack>
-                                        </Link>
+
+                                        <Stack
+                                            key={index}
+                                            direction={"row"}
+                                            alignItems={"center"}
+                                            justifyContent={"space-between"}
+                                            sx={{
+                                                marginBottom: "8px",
+                                                padding: "23px 13px",
+                                                background: "#F6F6FF",
+                                                borderRadius: "7px",
+                                                cursor: 'pointer'
+                                            }}
+                                            onClick={() => onSelectCase(ele.path)}
+                                        >
+                                            <Typography sx={{
+                                                fontSize: {
+                                                    sm: "18p",
+                                                    md: "20px",
+                                                    lg: "22px"
+                                                },
+                                                fontWeight: 600,
+                                                textDecoration: "none !important",
+                                                color: "black"
+                                            }}>
+                                                {ele.title}
+                                            </Typography>
+                                            <ImageListItem><img src={Arrow} alt="" /></ImageListItem>
+                                        </Stack>
+
                                     )
                                 })
                             }
                         </Stack>
-                        <Routes>
-                            {
-                                Cases.map((ele, index) => {
-                                    return (
-                                        <Route
-                                            key={index}
-                                            path={ele.path}
-                                            element={
-                                                <Stack
-                                                    direction={"row"}
-                                                    sx={{
-                                                        flexBasis: {
-                                                            sm: '75%',
-                                                            lg: "70%"
-                                                        },
-                                                        position : 'relative'
-                                                    }}
-                                                >
-                                                    <ImageListItem><img src={ele.image} alt="" style={{ "width": "auto" }} /></ImageListItem>
-                                                    <Box sx={{
-                                                        position:'absolute',
-                                                        left : '30%',
-                                                        top : '50%',
-                                                        translate : '0% -50%'
-                                                    }}>
-                                                        <Typography sx={{
-                                                            boxShadow: " 0px 0px 6px 0px #00000026",
-                                                            padding: {
-                                                                sm: "40px 18px",
-                                                                lg: "64px 30px"
-                                                            },
-                                                            color: "#2B2B2B",
-                                                            borderRadius: "15px",
-                                                            backgroundColor: "white",
-                                                            fontSize: {
-                                                                sm: "15px",
-                                                                md: "18px"
-                                                            }
-                                                        }}>
-                                                            {ele.content}
-                                                        </Typography>
-                                                    </Box>
-                                                </Stack>
-                                            }
-                                        />
-                                    )
-                                })
-                            }
 
-                        </Routes>
+                        {
+                            Cases.map((ele, index) => {
+                                return (
+                                    <>
+                                        {
+                                            caseItem == ele.path &&
+
+                                            <Stack
+                                                
+                                                direction={"row"}
+                                                sx={{
+                                                    flexBasis: {
+                                                        sm: '75%',
+                                                        lg: "70%"
+                                                    },
+                                                    position: 'relative'
+                                                }}
+                                            >
+                                                <ImageListItem><img src={ele.image} alt="" style={{ "width": "auto" }} /></ImageListItem>
+                                                <Box sx={{
+                                                    position: 'absolute',
+                                                    left: '30%',
+                                                    top: '50%',
+                                                    translate: '0% -50%'
+                                                }}>
+                                                    <Typography sx={{
+                                                        boxShadow: " 0px 0px 6px 0px #00000026",
+                                                        padding: {
+                                                            sm: "40px 18px",
+                                                            lg: "64px 30px"
+                                                        },
+                                                        color: "#2B2B2B",
+                                                        borderRadius: "15px",
+                                                        backgroundColor: "white",
+                                                        fontSize: {
+                                                            sm: "15px",
+                                                            md: "18px"
+                                                        }
+                                                    }}>
+                                                        {ele.content}
+                                                    </Typography>
+                                                </Box>
+                                            </Stack>
+                                        }
+                                    </>
+                                )
+                            })
+                        }
+
+
                     </Stack>
                 </Box>
             }
